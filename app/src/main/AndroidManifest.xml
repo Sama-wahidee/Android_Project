@@ -19,18 +19,7 @@
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".ui.MainView"
-            android:exported="false" />
-        <activity
-            android:name=".main"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Project.NoActionBar" />
-        <activity
             android:name=".signup"
-            android:exported="false" />
-        <activity
-            android:name=".ss"
             android:exported="false" />
         <activity
             android:name=".login"
