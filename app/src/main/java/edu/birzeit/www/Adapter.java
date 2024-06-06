@@ -52,6 +52,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         TextView seatCount;
         TextView carModel;
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             carName = itemView.findViewById(R.id.car_name);

@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,7 +25,7 @@ public class MainActivity2 extends AppCompatActivity {
 DrawerLayout drawerLayout;
 ImageButton imageButton;
 NavigationView navigationView;
-
+ImageButton filter;
 RecyclerView recyclerView;
 Adapter adapter;
 List<Car> cars;
@@ -39,7 +39,14 @@ List<Car> cars;
         navigationView=findViewById(R.id.navigationView);
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        filter = findViewById(R.id.filter);
+        filter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SideDrawerFragment sideDrawerFragment = new SideDrawerFragment();
+                sideDrawerFragment.show(getSupportFragmentManager(), "SideDrawerFragment");
+            }
+        });
         cars = new ArrayList<Car>();
         Car newCar = new Car("BMW", R.drawable.bmwc, 5, 200, 100,"m4");
         Car newCar1 = new Car("Cadillac ", R.drawable.cadillacc, 7, 200, 200,"Escalade ");

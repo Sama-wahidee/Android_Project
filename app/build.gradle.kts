@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.recyclerview)
+    implementation ("org.florescu.android.rangeseekbar:rangeseekbar-library:0.4.0")
     implementation("androidx.cardview:cardview:1.0.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

@@ -3,11 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_marginBottom="0dp"
     android:layout_centerHorizontal="true"
     android:background="@color/darkgray">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
     <ImageButton
         android:id="@+id/buttonDrawer"
@@ -25,5 +29,9 @@
         android:layout_marginStart="100dp"
         android:adjustViewBounds="true"
         android:src="@drawable/finalllogo" />
-
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
 </LinearLayout>
